@@ -1,9 +1,9 @@
 <?php
 
-namespace Ibpavlov\Saml2\Http\Controllers;
+namespace OsiOpenSource\Saml2\Http\Controllers;
 
-use Ibpavlov\Saml2\Events\Saml2LoginEvent;
-use Ibpavlov\Saml2\Saml2Auth;
+use OsiOpenSource\Saml2\Events\Saml2LoginEvent;
+use OsiOpenSource\Saml2\Saml2Auth;
 use Illuminate\Http\Request;
 use Illuminate\Log\Logger;
 use Illuminate\Session\Store;

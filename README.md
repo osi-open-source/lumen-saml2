@@ -1,6 +1,6 @@
 ## Lumen 5+ - Saml2
 
-[![Build Status](https://travis-ci.org/ibpavlov/lumen-saml2.svg)](https://travis-ci.org/ibpavlov/lumen-saml2)
+[![Build Status](https://travis-ci.org/osi-open-source/lumen-saml2.svg)](https://travis-ci.org/osi-open-source/lumen-saml2)
 
 A Lumen package for Saml2 integration as a SP (service provider) based on  [OneLogin](https://github.com/onelogin/php-saml) toolkit, which is much lighter and easier to install than simplesamlphp SP. It doesn't need separate routes or session storage to work!
 
@@ -13,15 +13,15 @@ Forked from "aacotroneo/laravel-saml2" and updated to work with Lumen
 You can install the package via composer:
 
 ```
-composer require ibpavlov/lumen-saml2
+composer require osi-open-source/lumen-saml2
 ```
 Or manually add this to your composer.json:
 
 ```json
-"ibpavlov/lumen-saml2": "*"
+"osi-open-source/lumen-saml2": "*"
 ```
 
-Then copy config files from `vendor/ibpavlov/lumen-saml2/config` to `config` folder. Then customize new files to match your configurations.
+Then copy config files from `vendor/osi-open-source/lumen-saml2/config` to `config` folder. Then customize new files to match your configurations.
 
 Apply configuration files and register the service in bootstrap/app.php:
 
@@ -29,7 +29,7 @@ Apply configuration files and register the service in bootstrap/app.php:
 $app->configure('saml2_settings');
 $app->configure('saml2_test');
 
-$app->register(Ibpavlov\Saml2\Saml2ServiceProvider::class);
+$app->register(OsiOpenSource\Saml2\Saml2ServiceProvider::class);
 ```
 
 
@@ -129,7 +129,7 @@ E.g.
 ```
 **MySaml2Controller.php**
 ```php
-use Ibpavlov\Saml2\Http\Controllers\Saml2Controller;
+use OsiOpenSource\Saml2\Http\Controllers\Saml2Controller;
 
 class MySaml2Controller extends Saml2Controller
 {
@@ -145,7 +145,7 @@ After login is called, the user will be redirected to the IDP login page. Then t
 
 ```php
 
- Event::listen('Ibpavlov\Saml2\Events\Saml2LoginEvent', function (Saml2LoginEvent $event) {
+ Event::listen('OsiOpenSource\Saml2\Events\Saml2LoginEvent', function (Saml2LoginEvent $event) {
             $messageId = $event->getSaml2Auth()->getLastMessageId();
             // Add your own code preventing reuse of a $messageId to stop replay attacks
 
@@ -205,7 +205,7 @@ For case 2 you will only receive the event. Both cases 1 and 2 receive the same 
 Note that for case 2, you may have to manually save your session to make the logout stick (as the session is saved by middleware, but the OneLogin library will redirect back to your IDP before that happens)
 
 ```php
-        Event::listen('Ibpavlov\Saml2\Events\Saml2LogoutEvent', function ($event) {
+        Event::listen('OsiOpenSource\Saml2\Events\Saml2LogoutEvent', function ($event) {
             Auth::logout();
             Session::save();
         });

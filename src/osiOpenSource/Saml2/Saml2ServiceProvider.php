@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibpavlov\Saml2;
+namespace OsiOpenSource\Saml2;
 
 use OneLogin\Saml2\Utils as OneLogin_Saml2_Utils;
 use Illuminate\Support\ServiceProvider;

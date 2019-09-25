@@ -1,10 +1,10 @@
 <?php
 
-namespace Ibpavlov\Saml2;
+namespace OsiOpenSource\Saml2;
 
 use OneLogin\Saml2\Auth as OneLogin_Saml2_Auth;
 use OneLogin\Saml2\Error as OneLogin_Saml2_Error;
-use Ibpavlov\Saml2\Events\Saml2LogoutEvent;
+use OsiOpenSource\Saml2\Events\Saml2LogoutEvent;
 
 use Psr\Log\InvalidArgumentException;
 use Illuminate\Support\Facades\URL;

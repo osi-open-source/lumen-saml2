@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibpavlov\Saml2;
+namespace OsiOpenSource\Saml2;
 
 use Laravel\Lumen\Routing\UrlGenerator;
 use OneLogin\Saml2\Auth as OneLogin_Saml2_Auth;
@@ -8,7 +8,7 @@ use OneLogin\Saml2\Auth as OneLogin_Saml2_Auth;
 /**
  * A simple class that represents the user that 'came' inside the saml2 assertion
  * Class Saml2User
- * @package Ibpavlov\Saml2
+ * @package OsiOpenSource\Saml2
  */
 class Saml2User
 {

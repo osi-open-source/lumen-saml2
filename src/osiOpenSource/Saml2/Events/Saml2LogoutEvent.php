@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibpavlov\Saml2\Events;
+namespace OsiOpenSource\Saml2\Events;
 
 class Saml2LogoutEvent extends Saml2Event
 {

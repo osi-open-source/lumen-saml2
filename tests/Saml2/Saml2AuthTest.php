@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibpavlov\Saml2;
+namespace OsiOpenSource\Saml2;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => config('saml2_settings.routesMiddleware'), 'prefix' => config('saml2_settings.routesPrefix').'/'], function() {
     Route::group(['prefix' => '{idpName}'], function () {
-        $saml2_controller = config('saml2_settings.saml2_controller', 'Ibpavlov\Saml2\Http\Controllers\Saml2Controller');
+        $saml2_controller = config('saml2_settings.saml2_controller', 'OsiOpenSource\Saml2\Http\Controllers\Saml2Controller');
         Route::get('/logout', array(
             'as' => 'saml2_logout',
             'uses' => $saml2_controller.'@logout',

@@ -1,9 +1,9 @@
 <?php
 
-namespace Ibpavlov\Saml2\Events;
+namespace OsiOpenSource\Saml2\Events;
 
-use Ibpavlov\Saml2\Saml2User;
-use Ibpavlov\Saml2\Saml2Auth;
+use OsiOpenSource\Saml2\Saml2User;
+use OsiOpenSource\Saml2\Saml2Auth;
 
 class Saml2LoginEvent extends Saml2Event
 {
