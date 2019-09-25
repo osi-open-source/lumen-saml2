@@ -1,8 +1,8 @@
 {
-    "name": "ibpavlov/lumen-saml2",
+    "name": "osi-open-source/lumen-saml2",
     "description": "A Lumen package for Saml2 integration as a SP (service provider) for multiple IdPs, based on OneLogin toolkit which is much more lightweight than simplesamlphp (Forked from aacotroneo/laravel-saml2).",
     "keywords": ["lumen","laravel","saml", "saml2", "onelogin"],
-    "homepage": "https://github.com/ibpavlov/lumen-saml2",
+    "homepage": "https://github.com/osi-open-source/lumen-saml2",
     "license": "MIT",
     "version": "3.0.3",
     "authors": [
@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Ibpavlov\\Saml2\\": "src/"
+            "osi-open-source\\Saml2\\": "src/"
         }
     },
     "minimum-stability": "stable"
