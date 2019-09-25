@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-0": {
-            "osi-open-source\\Saml2\\": "src/"
+            "OsiOpenSource\\Saml2\\": "src/"
         }
     },
     "minimum-stability": "stable"
